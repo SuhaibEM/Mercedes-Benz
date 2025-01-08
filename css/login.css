@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+form h1 {
+    padding-top: 50px;
+}
+@keyframes hid {
+    from {
+        transform: scale(0,0);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}
+.base {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    height: 500px;
+    width: 550px;
+    border-radius: 15px;
+    background-color:rgb(255, 255, 255); ;
+    backdrop-filter: blur(0px);
+    animation: hid 1s ;
+    transition: border-radius 0.7s, background 0.7s, border 0.7s, box-shadow 2s, backdrop-filter 1s
+}
+form {
+    
+    margin-left: 20%;
+    border: 0px;
+}
+.em {
+    padding-left :5px ;
+    border: 0px;
+    height: 40px;
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.26);
+    transition: transform 0.4s, background-color 0.5s, color 1s;
+    color: white;
+    font-size: larger;
+}
+.em:hover {
+    transform: scale(1.05,1.05);
+    background-color:rgba(0, 0, 0, 0.726); ;
+    
+}
+.em:active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.p {
+    
+margin-top: 40px;
+    display: block;
+}
+
+.ch {
+    margin-top: 20px;
+}
+
+.a {
+    margin-left: 60px; 
+    text-decoration: none; 
+    color: black;
+    transition: color 0.3s;
+}
+.a:hover {
+text-decoration: underline;
+color: blue;
+}
+.im {
+    width: 370px;
+    margin-top: 80px;
+    margin-left: 36%;
+    position: absolute;
+    animation: spin 4s infinite linear;
+}
+.base:hover {
+    border-radius: 26% 26% 26% 26% / 28% 0% 0% 0%; 
+    background: rgba(255,255,255,0.25);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: white 3px 3px 3px ;
+    backdrop-filter: blur(10px);
+}
+.img {
+    margin-left: 84%;
+    
+}
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+
+
+
